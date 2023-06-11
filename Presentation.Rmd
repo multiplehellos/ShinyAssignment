@@ -1,0 +1,45 @@
+---
+title: "Predicting Petal Length in Iris'"
+author: "Me"
+date: "2023-06-11"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the project
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+
+2. Deploy the application on Rstudio's shiny server
+
+3. Share the application link by pasting it into the provided text box
+
+4. Share your server.R and ui.R code on github
+
+## How to use the app
+
+- The app was created in R using the Shiny package (this slideshow was also created in R using R Markdown). 
+
+- The app's purpose is to predict the petal length of iris' based on it's sepal length.
+
+- the data used to train the prediction model was the 'iris' data, present within R
+
+- you can find the app here: 
+
+## Example of the iris data
+
+```{r}
+head(iris)
+```
+
+## Iris sepal and petal width plotted
+
+```{r}
+plot(iris$Sepal.Length, iris$Petal.Length, xlab = "Sepal Length", 
+             ylab = "Petal Width", bty = "n", pch = 16,
+             xlim = c(3, 7), ylim = c(0, 7))
+```
+
